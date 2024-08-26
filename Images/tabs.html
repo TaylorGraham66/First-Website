@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <script src="script.js" defer></script>
-    
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
     <ul>
-        <li data-tab-target="#Home">Home</li>
-        <li data-tab-target="#About">About</li>
-        <li data-tab-target="#Projects">Projects</li>
-        <li data-tab-target="#Experience">Experience</li>
+        <li data-tab-target="#home">Home</li>
+        <li data-tab-target="#about">About</li>
+        <li data-tab-target="#projects">Projects</li>
+        <li data-tab-target="#experience">Experience</li>
     </ul>
 
     <div class="tab-content">
-        <div id="Home">
+        <div id="home" data-tab-content>
             <h1>Home</h1>
             <p>This is the home</p>
         </div>
-        <div id="About">
+        <div id="about" data-tab-content>
             <h1>About</h1>
             <p>This is the about section</p>
         </div>
-        <div id="Projects">
+        <div id="projects" data-tab-content>
             <h1>Projects</h1>
             <p>These are my projects</p>
         </div>
-        <div id="Experience">
+        <div id="experience" data-tab-content>
             <h1>Experience</h1>
             <p>This is my work experience.</p>
         </div>
