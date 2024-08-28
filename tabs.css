@@ -60,6 +60,12 @@ body {
     margin-right: 15%;
 }
 
+.linkPage {
+    font-size: large;
+    font-weight: bold;
+    margin-left: 42%;
+}
+
 div.scroll-container {
     background-color: white;
     overflow: auto;
