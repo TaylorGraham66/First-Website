@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link href="tabs.css" rel="stylesheet">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!--Gray top border and background color-->
-    <div class="h1">
-    <!--Text that appears on the screen-->
-            Taylor Graham</br>
-            <div class="headunder">Aspiring Cybersecurity Professional</div>
-            <!--Contact Section-->
-             <div class="h5">
-                 Contact
+    <ul class="tabs">
+        <li data-tab-target="#home" class="active tab">Taylor Graham</li>
+        <li data-tab-target="#about" class="tab">About</li>
+        <li data-tab-target="#projects" class="tab">Projects</li>
+        <li data-tab-target="#experience" class="tab">Experience</li>
+        <li data-tab-target="#contact" class="tab">Contact</li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="home" data-tab-content class="active">
+            <h1 class="center">Home</h1>
+            <p class="centerBody">This is the home</p>
+        </div>
+        <div id="about" data-tab-content>
+            <h1 class="center">About</h1>
+            <p class="centerBody">Hello everyone! My name is Taylor Graham and I am a student at LSU studying Computer Science with a Concentration in Cybersecurity.</p>
+        </div>
+        <div id="projects" data-tab-content>
+            <h1 class="center">Projects</h1>
+            <h2 class=center>Tiger Dorm Defender Website</h2>
+            <a class="linkPage" href="https://github.com/owengaspard/dormDefender">Tiger Dorm Defender Github</a>
+            <p class="centerBody">My team and I were tasked with creating a program that would allow students who lost their Tiger Card to be able to unlock their dorm rooms remotely. We designed a website that allowed for the students to input their dorm, LSU ID, password, and a security question to be able to "unlock" their dorm room. The project was completed with React and Tailwind as well as used Mongoose for the database to store information. The website is also mobile friendly.</p>
+            <div class="scroll-container">
+                <img class="img" src="Images\mainpage.png" alt="mainpage">
+                <img class="img" src="Images\dropdown.png" alt="dropdown">
+                <img class="img" src="Images\login.png" alt="login">
+                <img class="img" src="Images\register.png" alt="register">
+                <img class="img" src="Images\about.png" alt="about">
             </div>
-            <div class="h6">
-                tgrah22@lsu.edu
-            </div>
+        </div>
+        <div id="experience" data-tab-content>
+            <h1 class="center">Experience</h1>
+            <p class="centerBody">I worked at VeraPro from February 2024 until August 2024 as a IT Summer Intern. On the job I imaged devices, maintained quality control, troubleshooted technological issues, and performed various repairs on device hardware.</p>
+        </div>
+        <div id="contact" data-tab-content>
+            <h1 class="center">Contact Me</h1>
+            <p class="centerBody">tgrah22@lsu.edu</p>
+        </div>
     </div>
-    <!--About Me section-->
-    <div class="h2">
-        About Me
-    </div>
-    <div class="p">
-        Hello everyone! My name is Taylor Graham and I am a student at LSU studying<br>Computer Science with a Concentration in Cybersecurity.
-    </div>
-    <!--Projects Section-->
-    <div class="h2">
-        Projects
-    </div>
-    <div class="p">
-        <div class="h3">Tiger Dorm Defender Website</div>
-        My team and I were tasked with creating a program that would allow students who lost their Tiger Card<br>to be able to unlock their dorm rooms remotely. We designed a website that allowed for the students to input their dorm,<br> LSU ID, password, and a security question to be able to "unlock" their dorm room. The project was completed with React<br> and Tailwind as well as used Mongoose for the database to store information. The website is also mobile friendly.
-    </div>
-    <!--Experience Section-->
-    <div class="h2">
-        Experience
-    </div>
-    <div class="p">
-        <div class="h3">VeraPro</div>
-        <div class="h4">Gonzales, LA / Sorrento, LA</div>
-        I worked at VeraPro from February 2024 until August 2024 as a IT Summer Intern.<br> On the job I imaged devices, maintained quality control, troubleshooted technological<br> issues, and performed various repairs on device hardware.
-    </div>
-    </body>
+</body>
 </html>
